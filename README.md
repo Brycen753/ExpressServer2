@@ -1,9 +1,9 @@
 Part the First
-Use express.static to serve static files. Mount it at the root directory so that it can serve files for your entire site.
 Use body-parser to parse POST requests. You may choose whether to use this for the entire server or just for features that need it.
 Use the express-session module for sessions. You may choose whether to use this for the entire server or just for features that need them. You may choose whether to store sessions in files or to just use the default memory store. If you are saving them in files, make sure you do not submit session files along with your project.
 Have a “not found” handler at the end of your middleware chain that gives a 404 status code and displays a nice HTML page that says the URL is not found
 You should have a static directory for static files. Make an index.html for your site that contains your name, the text "Comp 4310", and a link to the feature described in the second part.
+
 Part the Second
 Create a feature called secret. The point of this feature is to play a guessing game where the user guesses a secret number between 1 and 100 and the server tells him if his guess is too high, too low, or correct. We will store all data in the session.
 
