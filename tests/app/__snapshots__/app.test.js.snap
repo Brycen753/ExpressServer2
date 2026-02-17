@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`End point testing should respond to /hello route 1`] = `
+"Hello, world!
+"
+`;
+
+exports[`End point testing should respond with 404 for unknown routes 1`] = `
+"Not Found
+"
+`;
+
+exports[`Sample test suite should respond to /hello route 1`] = `
+"Hello, world!
+"
+`;
+
+exports[`Sample test suite should respond with 404 for unknown routes 1`] = `
+"Not Found
+"
+`;

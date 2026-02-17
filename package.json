@@ -1,0 +1,24 @@
+{
+  "name": "web_server",
+  "version": "1.0.0",
+  "description": "Simple web server for COMP 4310",
+  "main": "lib/server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node .",
+    "start:watch": "nodemon ."
+  },
+  "author": "Brycen Biskner",
+  "license": "ISC",
+  "dependencies": {
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.11",
+    "supertest": "^7.2.2"
+  },
+  "jest": {
+    "verbose": true
+  }
+}
