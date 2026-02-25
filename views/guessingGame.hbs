@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Guessing Game</title>
+    </head>
+
+    <h1>Guessing Game</h1>
+
+
+    <ul>
+        {{#each guesses}}
+            <li class="{{result}}">
+                {{value}}
+                {{#if (eq result "high")}}too high{{/if}}
+                {{#if (eq result "low")}}too low{{/if}}
+                {{#if (eq result "correct")}}correct!{{/if}}
+            </li>
+        {{/each}}
+    </ul>
+
+    {{unless secretNumber}}
+
+</html>
