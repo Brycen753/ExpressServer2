@@ -5,20 +5,38 @@
 
     <h1>Guessing Game</h1>
 
+    {{#if debug}}
+        <!--#{{secretNumber}}#-->
+    {{/if}}
+
+    {{#if invalidGuess}}
+        <p>Invalid guess</p>
+    {{/if}}
 
     <ul>
         {{#each guesses}}
-            <li class="{{result}}">
-                {{value}}
-
+            <li class="{{class}}">
+                {{value}}{{result}}
             </li>
         {{/each}}
     </ul>
 
+    {{#if won}}
+        <p>You won!</p>
+        <p>{{guessCount}} guesses</p>
+
+        <form method="POST" action="/reset">
+            <button type="submit" autofocus>New Game</button>
+        </form>
+    {{else}}
+        <form method="POST" action="/guess">
+            <input type="text" name="guess" autofocus>
+            <button type="submit">Guess</button>
+        </form>
+    {{/if}}
+
     {{unless secretNumber}}
 
-    {{#if debug}}
-        <p>#{{secretNumber}}#</p>
-    {{/if}}
+    
 
 </html>
