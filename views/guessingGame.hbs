@@ -10,13 +10,15 @@
         {{#each guesses}}
             <li class="{{result}}">
                 {{value}}
-                {{#if (eq result "high")}}too high{{/if}}
-                {{#if (eq result "low")}}too low{{/if}}
-                {{#if (eq result "correct")}}correct!{{/if}}
+
             </li>
         {{/each}}
     </ul>
 
     {{unless secretNumber}}
+
+    {{#if debug}}
+        <p>#{{secretNumber}}#</p>
+    {{/if}}
 
 </html>
