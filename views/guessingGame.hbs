@@ -15,10 +15,8 @@
     {{/if}}
 
     <ul>
-        {{#each guesses}}
-            <li class="{{class}}">
-                {{value}} {{result}}
-            </li>
+        {{#each reversedGuesses}}
+            <li>{{this.guess}} {{this.result}}</li>
         {{/each}}
     </ul>
 
