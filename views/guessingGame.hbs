@@ -22,16 +22,16 @@
     </ul>
 
     {{#if won}}
-        <p class="p">You won!</p>
+        <p class="won">You won!</p>
         <p class="p">{{guessCount}} guesses</p>
 
         <form method="POST" action="reset" class="form">
-            <button type="submit" autofocus>New Game</button>
+            <button type="submit" autofocus class="button">New Game</button>
         </form>
     {{else}}
         <form method="POST" action="guess" class="form">
-            <input type="text" name="guess" autofocus>
-            <button type="submit">Guess</button>
+            <input type="text" name="guess" autofocus class="input">
+            <button type="submit" class="button">Guess</button>
         </form>
     {{/if}}
 
