@@ -2,6 +2,7 @@
     <head>
         <title>Guessing Game</title>
     </head>
+    <body>
 
     <h1>Guessing Game</h1>
 
@@ -16,7 +17,7 @@
     <ul>
         {{#each guesses}}
             <li class="{{class}}">
-                {{value}}{{result}}
+                {{value}} {{result}}
             </li>
         {{/each}}
     </ul>
@@ -25,18 +26,15 @@
         <p>You won!</p>
         <p>{{guessCount}} guesses</p>
 
-        <form method="POST" action="/reset">
+        <form method="POST" action="reset">
             <button type="submit" autofocus>New Game</button>
         </form>
     {{else}}
-        <form method="POST" action="/guess">
+        <form method="POST" action="guess">
             <input type="text" name="guess" autofocus>
             <button type="submit">Guess</button>
         </form>
     {{/if}}
 
-    {{unless secretNumber}}
-
-    
-
+    </body>
 </html>
