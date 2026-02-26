@@ -1,34 +1,35 @@
 <html>
     <head>
         <title>Guessing Game</title>
+        <link rel="stylesheet" type="text/css" href="/secret/play.css" />
     </head>
     <body>
 
-    <h1>Guessing Game</h1>
+    <h1 class="h1">Guessing Game</h1>
 
     {{#if debug}}
-        <p>#{{secretNumber}}#</p>
+        <p class="p">#{{secretNumber}}#</p>
     {{/if}}
 
     {{#if invalidGuess}}
-        <p>Invalid guess</p>
+        <p class="p">Invalid guess</p>
     {{/if}}
 
-    <ul>
+    <ul class="ul">
         {{#each reversedGuesses}}
-            <li>{{this.guess}} {{this.result}}</li>
+            <li class="{{this.className}}">{{this.guess}} {{this.result}}</li>
         {{/each}}
     </ul>
 
     {{#if won}}
-        <p>You won!</p>
-        <p>{{guessCount}} guesses</p>
+        <p class="p">You won!</p>
+        <p class="p">{{guessCount}} guesses</p>
 
-        <form method="POST" action="reset">
+        <form method="POST" action="reset" class="form">
             <button type="submit" autofocus>New Game</button>
         </form>
     {{else}}
-        <form method="POST" action="guess">
+        <form method="POST" action="guess" class="form">
             <input type="text" name="guess" autofocus>
             <button type="submit">Guess</button>
         </form>
