@@ -1,0 +1,6 @@
+@api = http://localhost:8000/api
+@secret = http://localhost:8000/secret/play
+
+###
+GET {{secret}}
+
