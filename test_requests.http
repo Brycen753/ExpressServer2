@@ -2,5 +2,5 @@
 @secret = http://localhost:8000/secret/play
 
 ###
-GET {{secret}}
+GET {{api}}/hi
 
