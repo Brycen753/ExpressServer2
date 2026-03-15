@@ -1,6 +1,9 @@
+@classDemo = http://localhost:8000/classDemoApi
 @api = http://localhost:8000/api
 @secret = http://localhost:8000/secret/play
 
 ###
 GET {{api}}/hi
 
+###
+GET {{classDemo}}/items
