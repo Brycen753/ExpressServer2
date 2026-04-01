@@ -2,3 +2,10 @@
 /logs
 /sessions
 *.tgz
+
+test_requests.http
+/classDemoApi
+/static
+/tests
+/views
+/db
