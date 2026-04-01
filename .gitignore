@@ -9,3 +9,4 @@ test_requests.http
 /tests
 /views
 /db
+inventory.js
