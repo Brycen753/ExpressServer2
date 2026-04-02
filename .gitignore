@@ -4,9 +4,9 @@
 *.tgz
 
 test_requests.http
-classDemoApi/
-static/
-tests/
-views/
-db/
+/classDemoApi
+/static
+/tests
+/views
+/db
 /inventory.js
