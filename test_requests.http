@@ -1,9 +1,9 @@
-@classDemo = http://localhost:8000/classDemoApi
-@api = http://localhost:8000/api
-@secret = http://localhost:8000/secret/play
+@users = http://localhost:8000/users
+@token = {{login.response.body.$.token}}
+
+GET {{users}}/abc.json
+Authorization: Bearer {{token}}
 
 ###
-GET {{api}}/hi
-
-###
-GET {{classDemo}}/items
+# @name login
+GET https://taz.harding.edu/tas/login?username=bbisk&admin=true&expiresIn=1hr
