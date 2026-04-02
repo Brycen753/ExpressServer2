@@ -3,8 +3,8 @@ Names of contributors:
 - Jayden Dees
 
 Project title & description:
-- ASQ API
-- For this assignment you should modify your web server to create the A Stupid Question API.
+- Express Server
+- Coursework web server with example routing and static assets.
 
 External resources:
 - Class videos (March 3 - March 10)
@@ -14,4 +14,4 @@ Project weaknesses:
 - Tardiness
 
 Project strengths:
-- Gave us a better understanding in routing and working with databases.
+- Gave us a better understanding of Express routing.

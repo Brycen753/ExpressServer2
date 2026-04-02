@@ -6,8 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "node .",
-    "start:watch": "nodemon .",
-    "startdb": "mongod --dbpath db"
+    "start:watch": "nodemon ."
   },
   "author": "Brycen Biskner",
   "license": "ISC",
@@ -16,7 +15,6 @@
     "express": "^5.2.1",
     "express-handlebars": "^8.0.1",
     "express-session": "^1.19.0",
-    "mongoose": "^9.3.0",
     "morgan": "^1.10.1",
     "winston": "^3.19.0"
   },
