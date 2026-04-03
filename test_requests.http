@@ -6,4 +6,4 @@ Authorization: Bearer {{token}}
 
 ###
 # @name login
-GET https://taz.harding.edu/tas/login?username=bbisk&admin=true&expiresIn=1hr
+GET https://taz.harding.edu/tas/login?username=jdees&admin=true&expiresIn=1hr
